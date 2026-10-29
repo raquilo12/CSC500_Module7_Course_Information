@@ -1,4 +1,5 @@
 
+
 # ------------------------------------------------------------
 # Student: Richard Aquilo Jr.
 # University: Colorado State University Global
@@ -7,7 +8,7 @@
 # Assignment: Module 7 Critical Thinking Assignment
 # Assignment Title: Robust Function Development
 # Program: Course Information System
-# Date: October 27, 2026 version 3
+# Date: October 29, 2026
 # ------------------------------------------------------------
 # Purpose:
 # This program allows a user to enter course numbers and see
@@ -26,8 +27,8 @@
 #
 # IMPORTANT:
 # The assignment's data table does not supply meeting times.
-# The third dictionary uses clearly identified placeholders
-# until the instructor confirms the official meeting times.
+# Dr. Holbert confirmed on October 29, 2026, that fictional
+# meeting times may be created for this assignment.
 # ------------------------------------------------------------
 
 
@@ -59,18 +60,20 @@ course_instructors = {
 }
 
 
-# The third dictionary stores the meeting times.
-# The assignment requires three dictionaries but does not
-# provide actual meeting times in its data table.
+# The third dictionary stores fictional meeting times.
+# The assignment requires three separate dictionaries.
 #
-# The placeholders avoid presenting invented times as facts.
+# Dr. Holbert confirmed on October 29, 2026, that
+# students may create meeting times for the assignment.
+#
+# These times are examples, not official course schedules.
 
 course_times = {
-    "CSC101": "Not provided in assignment",
-    "CSC102": "Not provided in assignment",
-    "CSC103": "Not provided in assignment",
-    "NET110": "Not provided in assignment",
-    "COM241": "Not provided in assignment",
+    "CSC101": "Monday 9:00 AM",
+    "CSC102": "Tuesday 10:00 AM",
+    "CSC103": "Wednesday 11:00 AM",
+    "NET110": "Thursday 1:00 PM",
+    "COM241": "Friday 2:00 PM",
 }
 
 
@@ -88,7 +91,7 @@ def display_course_information(course_number):
     """
     Retrieve and display course information.
 
-    If the course number does not exist, display a friendly
+    If the course number does not exist, display a not found
     error message instead of allowing the program to crash.
     """
 
