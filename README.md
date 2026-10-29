@@ -1,6 +1,7 @@
-CSC500 Module 7 – Course Information System
 
-Project Overview
+# CSC500 Module 7 – Course Information System
+
+## Project Overview
 
 This project was developed for the Module 7 Critical Thinking Assignment, Robust Function Development, in CSC500: Principles of Programming at Colorado State University Global.
 
@@ -8,148 +9,130 @@ The Course Information System is a Python program that allows users to enter a c
 
 The program uses three separate dictionaries, a user-defined function, exception handling, and a while loop to process multiple course lookups during one session.
 
-Program Features
+## Program Features
 
-Stores course information using three separate Python dictionaries.
+- Stores course information using three separate Python dictionaries.
+- Uses course numbers as dictionary keys.
+- Retrieves room numbers, instructors, and meeting times.
+- Uses a user-defined function to organize the lookup process.
+- Uses `try` and `except KeyError` to handle invalid course numbers without crashing.
+- Allows multiple course lookups using a `while` loop.
+- Accepts lowercase course numbers and removes extra spaces.
+- Allows users to enter `Q` to exit the program.
 
-Uses course numbers as dictionary keys.
+## Course Data
 
-Retrieves room numbers, instructors, and meeting times.
+| Course Number | Room Number | Instructor | Meeting Time |
+|---     |---   |---       |---                 |
+| CSC101 | 3004 | Haynes   | Monday 9:00 AM     |
+| CSC102 | 4501 | Alvarado | Tuesday 10:00 AM   |
+| CSC103 | 6755 | Rich     | Wednesday 11:00 AM |
+| NET110 | 1244 | Burke    | Thursday 1:00 PM   |
+| COM241 | 1411 | Lee      | Friday 2:00 PM     |
 
-Uses a user-defined function to organize the lookup process.
+### Meeting Time Clarification
 
-Uses try and except KeyError to handle invalid course numbers without crashing.
+The assignment provides room numbers and instructors but does not include meeting times.
 
-Allows multiple course lookups using a while loop.
+On October 29, 2026, Dr. Brian Holbert confirmed by email that students could either allow users to enter meeting times or create fictional meeting times for the assignment.
 
-Accepts lowercase course numbers and removes extra spaces.
+Based on this clarification, the third dictionary contains five fictional meeting times.
 
-Allows users to enter Q to exit the program.
+These meeting times are used for demonstration purposes only and do not represent official course schedules.
 
-Course Data
+## Technologies Used
 
-Course Number
+- Python 3.14
+- Visual Studio Code
+- GitHub
 
-Room Number
+## How to Run the Program
 
-Instructor
+1. Download `CSC500_Module7_Course_Information.py` from this repository.
+2. Open the file in Visual Studio Code.
+3. Open the integrated terminal.
+4. Navigate to the folder containing the Python file.
+5. Execute the following command:
 
-CSC101
-
-3004
-
-Haynes
-
-CSC102
-
-4501
-
-Alvarado
-
-CSC103
-
-6755
-
-Rich
-
-NET110
-
-1244
-
-Burke
-
-COM241
-
-1411
-
-Lee
-
-Meeting Time Note: The assignment provides room numbers and instructors but does not include meeting times. The third dictionary contains the placeholder "Not provided in assignment" for each course rather than using invented meeting times.
-
-Technologies Used
-
-Python 3.14
-
-Visual Studio Code
-
-GitHub
-
-How to Run the Program
-
-Download the Python file from this repository.
-
-Open the file in Visual Studio Code.
-
-Open the integrated terminal.
-
-Navigate to the folder containing the Python file.
-
-Execute the following command:
-
+```bash
 python CSC500_Module7_Course_Information.py
+```
 
-Enter a course number when prompted.
+6. Enter a course number when prompted.
+7. Continue entering course numbers or type `Q` to quit.
 
-Continue entering course numbers or type Q to quit.
+## Example Program Execution
 
-Example Program Execution
+The following example illustrates the expected program output:
 
+```text
 COURSE INFORMATION SYSTEM
 
 Enter a course number (or Q to quit): CSC101
 Course Number: CSC101
 Room Number: 3004
 Instructor: Haynes
-Meeting Time: Not provided in assignment
+Meeting Time: Monday 9:00 AM
 
 Enter a course number (or Q to quit): CSC102
 Course Number: CSC102
 Room Number: 4501
 Instructor: Alvarado
-Meeting Time: Not provided in assignment
+Meeting Time: Tuesday 10:00 AM
 
 Enter a course number (or Q to quit): CSC999
 Course CSC999 was not found. Please check the course number.
 
 Enter a course number (or Q to quit): Q
 Thank you for using the Course Information System.
+```
 
-Program Testing
+## Program Testing
 
-The program is designed to support the following tests:
+The program is designed to support the following test cases:
 
-Valid course numbers: CSC101, CSC102, CSC103, NET110, COM241.
+| Test Input | Expected Result |
+|---|---|
+| CSC101 | Room 3004, Haynes, Monday 9:00 AM |
+| CSC102 | Room 4501, Alvarado, Tuesday 10:00 AM |
+| CSC103 | Room 6755, Rich, Wednesday 11:00 AM |
+| NET110 | Room 1244, Burke, Thursday 1:00 PM |
+| COM241 | Room 1411, Lee, Friday 2:00 PM |
+| CSC999 | Friendly not-found message |
+| csc101 | Accepted as CSC101 |
+| Input with spaces | Spaces removed; valid course retrieved |
+| 12345 | Friendly not-found message |
+| Blank input | Friendly not-found message |
+| Q | Program exits normally |
 
-Invalid course number: CSC999.
+### Expected Program Behavior
 
-Lowercase input: csc101.
+- Correct course information is displayed for valid course numbers.
+- Invalid course numbers produce a friendly error message without crashing the program.
+- Lowercase course numbers are converted to uppercase.
+- Leading and trailing spaces are removed.
+- The program continues prompting after each lookup.
+- Entering `Q` terminates the program normally.
 
-Input with leading and trailing spaces.
+## Project Files
 
-Numeric input: 12345.
+- `CSC500_Module7_Course_Information.py` – Complete Python source code.
+- `README.md` – Project description, execution instructions, and testing information.
 
-Blank input.
+## Academic Information
 
-Program termination using Q.
+**University:** Colorado State University Global
 
-Expected behavior includes accurate course information, friendly error messages, continued prompting after lookups, and normal program termination.
+**Course:** CSC500 – Principles of Programming
 
-Project Files
+**Instructor:** Dr. Brian Holbert
 
-CSC500_Module7_Course_Information.py – Complete Python source code.
+**Assignment:** Module 7 Critical Thinking Assignment – Robust Function Development
 
-README.md – Project description, execution instructions, and testing information.
+**Date:** October 29, 2026
 
-Academic Information
+## References
 
-University: Colorado State University Global
-Course: CSC500 – Principles of Programming
-Instructor: Dr. Brian Holbert
-Assignment: Module 7 Critical Thinking Assignment – Robust Function Development
-Date: October 27, 2026
+Python Software Foundation. (2026). *The Python tutorial*. https://docs.python.org/3/tutorial/
 
-References
-
-Python Software Foundation. (2026). The Python tutorial. https://docs.python.org/3/tutorial/
-
-Python Software Foundation. (2026). Errors and exceptions. https://docs.python.org/3/tutorial/errors.html
+Python Software Foundation. (2026). *Errors and exceptions*. https://docs.python.org/3/tutorial/errors.html
