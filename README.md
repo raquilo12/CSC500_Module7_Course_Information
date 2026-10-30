@@ -15,10 +15,10 @@ The program uses three separate dictionaries, a user-defined function, exception
 - Uses course numbers as dictionary keys.
 - Retrieves room numbers, instructors, and meeting times.
 - Uses a user-defined function to organize the lookup process.
-- Uses `try` and `except KeyError` to handle invalid course numbers without crashing.
-- Allows multiple course lookups using a `while` loop.
+- Uses 'try' and 'except KeyError' to handle invalid course numbers without crashing.
+- Allows multiple course lookups using a 'while' loop.
 - Accepts lowercase course numbers and removes extra spaces.
-- Allows users to enter `Q` to exit the program.
+- Allows users to enter 'Q' to exit the program.
 
 ## Course Data
 
@@ -112,7 +112,7 @@ The program is designed to support the following test cases:
 - Lowercase course numbers are converted to uppercase.
 - Leading and trailing spaces are removed.
 - The program continues prompting after each lookup.
-- Entering `Q` terminates the program normally.
+- Entering 'Q' terminates the program normally.
 
 ## Project Files
 
