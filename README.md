@@ -59,7 +59,7 @@ python CSC500_Module7_Course_Information.py
 ```
 
 6. Enter a course number when prompted.
-7. Continue entering course numbers or type `Q` to quit.
+7. Continue entering course numbers or type 'Q' to quit.
 
 ## Example Program Execution
 
